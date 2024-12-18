@@ -25,7 +25,7 @@ class EmployeeController {
     @PostMapping
     public ResponseEntity<String> storeEmployee(@Valid @RequestBody Employee employee) {
         employeeService.addEmployee(employee);
-        return ResponseEntity.status(HttpStatus.CREATED).body("Employee stored successfully.");
+        return ResponseEntity.status(HttpStatus.CREATED).body("Employee stored successfully");
     }
 
     @GetMapping("/tax-deduction")
